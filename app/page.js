@@ -5,34 +5,34 @@ export default function Home() {
   return (
     <main>
       <section className={styles.hero}>
-        <h1>Velkommen til din konto</h1>
+        <h1>Supabase Suth in Next.js</h1>
         <p>
-          Opret en konto eller log ind for at komme i gang. På din profil kan du
-          se dine kontooplysninger og logge ud igen.
+          Sign up or log in to get started. On your profile you can see your
+          account details and log out again.
         </p>
       </section>
 
-      <h2 className={styles.heading}>Kom godt i gang</h2>
+      <h2 className={styles.heading}>Routes</h2>
       <ul className={styles.routes}>
         <li>
-          <Link href="/signup">Opret konto</Link>
-          <span>Opret en konto med din e-mail og en adgangskode.</span>
-          <em>Offentlig</em>
+          <Link href="/signup">/signup</Link>
+          <span>Create an account with your email and a password.</span>
+          <em>Public</em>
         </li>
         <li>
-          <Link href="/login">Log ind</Link>
-          <span>Log ind på din eksisterende konto.</span>
-          <em>Offentlig</em>
+          <Link href="/login">/login</Link>
+          <span>Log in to your existing account.</span>
+          <em>Public</em>
         </li>
         <li>
-          <Link href="/profile">Min profil</Link>
-          <span>Se dine kontooplysninger og log ud. Kræver, at du er logget ind.</span>
-          <em className={styles.protected}>Log ind påkrævet</em>
+          <Link href="/profile">/profile</Link>
+          <span>See your account details and log out. Requires you to be logged in.</span>
+          <em className={styles.protected}>Login required</em>
         </li>
  <li>
-          <Link href="/members">Medlemmer</Link>
-          <span>Side kun for medlemmer</span>
-          <em className={styles.protected}>Log ind påkrævet</em>
+          <Link href="/members">/members</Link>
+          <span>A page for members only.</span>
+          <em className={styles.protected}>Login required</em>
         </li>
       </ul>
     </main>
